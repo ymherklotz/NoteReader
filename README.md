@@ -10,7 +10,7 @@ It is not yet available on every platform, which is a goal that I am aiming at a
 
 ##How it works##
 
-first measures the intensities of the note line in black and white seen below:
+First measures the intensities of the note line in black and white seen below:
 
 __Horizontally__
 ![alt tag](https://github.com/zedarider/NoteReader/blob/master/program_files/cut_hist_horiz.jpg)
