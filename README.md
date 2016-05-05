@@ -1,4 +1,4 @@
-# NoteReader#
+#NoteReader#
 
 This Project was created for a fpga project where we had to create custom sheet music from real scores that we got from flat.io.
 
@@ -12,8 +12,8 @@ It is not yet available on every platform, which is a goal that I am aiming at a
 
 first measures the intensities of the note line in black and white seen below:
 
-Horizontally
+__Horizontally__
 ![alt tag](https://github.com/zedarider/NoteReader/blob/master/program_files/cut_hist_horiz.jpg)
 
-and Vertically
+__Vertically__
 ![alt tag](https://github.com/zedarider/NoteReader/blob/master/program_files/cut_hist_vert.jpg)
