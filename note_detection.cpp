@@ -111,7 +111,7 @@ int main(int argc, char** argv) {
 	imwrite("./program_files/cut_hist_horiz.jpg", cut);
 	imwrite("./program_files/cut_hist_vert.jpg", cut2);
 	imwrite("./program_files/note_detected.jpg", notes);
-	imwrite("./program_fiels/pitch_detect.jpg", notesbw);
+	imwrite("./program_files/pitch_detect.jpg", notesbw);
 
 	// Creating text files with the data for external access
 	noteStream.open("./program_files/note.txt");
