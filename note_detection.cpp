@@ -107,20 +107,20 @@ int main(int argc, char** argv) {
 	drawNoteLoc(notes, finalNotes, noteNum);
 
 	// Writing all the outputs to files for logging
-	imwrite("cut_out.jpg", cut_offbw);
-	imwrite("cut_hist_horiz.jpg", cut);
-	imwrite("cut_hist_vert.jpg", cut2);
-	imwrite("note_detected.jpg", notes);
-	imwrite("pitch_detect.jpg", notesbw);
+	imwrite("./program_files/cut_out.jpg", cut_offbw);
+	imwrite("./program_files/cut_hist_horiz.jpg", cut);
+	imwrite("./program_files/cut_hist_vert.jpg", cut2);
+	imwrite("./program_files/note_detected.jpg", notes);
+	imwrite("./program_fiels/pitch_detect.jpg", notesbw);
 
 	// Creating text files with the data for external access
-	noteStream.open("note.txt");
+	noteStream.open("./program_files/note.txt");
 	for(int i = 0; i < noteRestNum; ++i) {
 		noteStream << noteRests[i][0] << " " << noteRests[i][1] << endl;
 	}  
 	noteStream.close();
 
-	noteStream.open("noteBits.txt");
+	noteStream.open("./program_files/noteBits.txt");
 	noteStream << noteRestNum << endl;
 	for(int i = 0; i < noteRestNum; ++i) {
 		for(int j = 0; j < NOTEBIT; ++j) {

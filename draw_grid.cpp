@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 	fstream inputBits;
 
 	// get input
-	inputBits.open("noteBits1.txt");
+	inputBits.open("./program_files/noteBits1.txt");
 	inputBits >> noteNum;
 
 	int notes[BOXWIDTH][BOXHEIGHT];
@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 	inputBits.close();
 	
 	int tmpNote = noteNum;
-	inputBits.open("noteBits2.txt");
+	inputBits.open("./program_files/noteBits2.txt");
 	inputBits >> noteNum;
 
 	for(int i = tmpNote; i < noteNum+tmpNote; ++i) {
@@ -58,7 +58,7 @@ int main(int argc, char** argv) {
 		}
 	}
 
-	imwrite("A4Grid.jpg", A4Grid);
+	imwrite("./program_files/A4Grid.jpg", A4Grid);
 	return 0;
 }
 
