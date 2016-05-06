@@ -4,9 +4,9 @@
 #define BOXHEIGHT 5
 #define BOXWIDTH 32
 #define BOXBORDER 10
-#define BORDER 20
+#define BORDER 40
 #define GRIDNUM 1
-#define DOTSIZE 40
+#define DOTSIZE 80
 
 #include <opencv2/core/core.hpp>
 
