@@ -58,6 +58,8 @@ int main(int argc, char** argv) {
 		}
 	}
 
+	colourRect(redPix1, Vec3b(0, 0, 255));
+
 	imwrite("./program_files/A4Grid.jpg", A4Grid);
 	return 0;
 }
@@ -67,8 +69,8 @@ void initGrid(Mat &A4image, Mat &row1, Mat &row2, Mat &row3, Mat &redPix1, Mat &
 	//row2 = A4image(Rect(BORDER, HEIGHT/GRIDNUM+BORDER/2, WIDTH-2*BORDER, HEIGHT/GRIDNUM-2*BORDER));
 	//row3 = A4image(Rect(BORDER, 2*(HEIGHT/GRIDNUM)+BORDER/2, WIDTH-2*BORDER, HEIGHT/GRIDNUM-2*BORDER));
 
-	redPix1 = A4image(Rect(0, 0, DOTSIZE, DOTSIZE));
-	redPix2 = A4image(Rect(WIDTH-DOTSIZE, 0, DOTSIZE, DOTSIZE));
+	redPix1 = A4image(Rect(2*BORDER, 2*BORDER, DOTSIZE, DOTSIZE));
+	redPix2 = A4image(Rect(WIDTH-DOTSIZE-BORDER, 2*BORDER, DOTSIZE, DOTSIZE));
 	
 	colourRect(row1, Vec3b(0, 0, 0));
 	//colourRect(row2, Vec3b(0, 0, 0));
